@@ -1,31 +1,16 @@
-var name = prompt("Enter Username", "Yaman Aamir");
-var num = prompt("Enter Phone Number", "03232323232");
-var email = prompt("Enter Email", "Yaman@gmail.com");
-var pass = prompt("Enter Password");
-var conPass = prompt("Enter Confirm Password");
+var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+var evenArr = [];
+var oddArr = [];
 
-
-// For User name
-if (name == "" || name == " ") {
-    alert("Please input Username")
+for (i = 0; i < numberArray.length; i++) {
+    if (numberArray[i] % 2 === 0) {
+        evenArr.push(numberArray[i]);
+    }
+    if (numberArray[i] % 2 === 1) {
+        oddArr.push(numberArray[i]);
+    }
 }
-
-// For Phone num
-if (num == "" || num == " ") {
-    alert("Please input Phone Number")
-}
-
-// For Email
-if (email == "" || email == " ") {
-    alert("Please input Email")
-}
-
-// For matching password
-if (pass == "" || pass == " " && conPass == "" || conPass == " ") {
-    alert("Please input Password")
-    alert("Please input Confirm Password")
-} else if (pass == conPass) {
-    alert("You are successfully registered")
-} else {
-    alert("Password should be same")
-}
+document.write("<h2>Even Numbers</h2>");
+document.write("Even : " + evenArr);
+document.write("<h2>Odd Numbers</h2>");
+document.write("Odd : " + oddArr);

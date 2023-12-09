@@ -1,16 +1,7 @@
-var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-var evenArr = [];
-var oddArr = [];
+var word = prompt("Enter any word to check it's Palindrome or not");
 
-for (i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] % 2 === 0) {
-        evenArr.push(numberArray[i]);
-    }
-    if (numberArray[i] % 2 === 1) {
-        oddArr.push(numberArray[i]);
-    }
+if (word[0] == word[word.length - 1] && word[1] == word[word.length - 2]) {
+    alert("Its Palindrome");
+} else {
+    alert("Its Not");
 }
-document.write("<h2>Even Numbers</h2>");
-document.write("Even : " + evenArr);
-document.write("<h2>Odd Numbers</h2>");
-document.write("Odd : " + oddArr);
